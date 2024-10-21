@@ -23,7 +23,7 @@ const Product = () => {
     },[details])
 
     useEffect(() => {
-        itemDetails ? setImages(itemDetails[0].galleryDetails.map((a) => (a.url))): 
+        itemDetails ? setImages(itemDetails[0].galleryDetails.map((a) => (a.baseUrl))): 
         console.log('loading img');
     },[itemDetails])
 
